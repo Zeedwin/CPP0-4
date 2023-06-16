@@ -63,5 +63,7 @@ void Contacts::add_contact()
 									phonenumber, 
 									darkestsecret);
 	phb.ind += (phb.ind + 1) % 8;
-	cout << "\033[32mRegistration is complete\n\033[0m" << endl;
+	cout << "\033[32mRegistration is complete\n\033[0m" << "\033[1;97mWhat would you like to do now?" << endl;
+	cout << "\033[1;32mAdd \033[0ma contact: \"ADD\"" << endl;
+	cout << "\033[1;36mSearch \033[0ma contact: \"SEARCH\"" << endl << "\033[1;31mExit \033[0mthe \033[1;35mPhoneBook\033[0m: \"EXIT\"" << endl;
 }
