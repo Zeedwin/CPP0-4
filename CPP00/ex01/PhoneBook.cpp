@@ -23,7 +23,7 @@ void PhoneBook::handle_input()
 		for (int j = 0; input[j]; ++j)
 			input[j] = toupper(input[j]);
 		if(input == "ADD") 
-			cont.add_contact();
+			ind = cont.add_contact(ind);
 		if(input == "SEARCH")
 			cout << "u are searching" << endl;
 		if(input == "LAIN")

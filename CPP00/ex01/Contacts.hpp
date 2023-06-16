@@ -28,7 +28,7 @@ void save_contact(string fname,
 							string dsecret);
 public:
 	string	store_string(string str);
-	void add_contact();
+	int add_contact(int index);
 	Contacts(/* args */);
 };
 
