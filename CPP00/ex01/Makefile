@@ -6,14 +6,14 @@
 #    By: jgirard- <jgirard-@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/06/14 19:43:52 by jgirard-          #+#    #+#              #
-#    Updated: 2023/06/16 03:00:16 by jgirard-         ###   ########.fr        #
+#    Updated: 2023/06/19 14:55:38 by jgirard-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 
 NAME = phonebook
 CC         := c++
-FLAGS    := -Wall -Wextra -Werror -std=c++98
+FLAGS    := -g -Wall -Wextra -Werror -std=c++98
 SRCS        :=      PhoneBook.cpp \
 					Contacts.cpp \
 					main.cpp

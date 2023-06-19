@@ -21,6 +21,7 @@ private:
 	string	nickname;
 	string	phonenumber;
 	string	darkestsecret;
+	PhoneBook	phb;
 void save_contact(string fname,
 							string lname,
 							string nname,
@@ -29,6 +30,8 @@ void save_contact(string fname,
 public:
 	string	store_string(string str);
 	int add_contact(int index);
+	void search_contact(int index);
+	void display_contact(int index);
 	Contacts(/* args */);
 };
 

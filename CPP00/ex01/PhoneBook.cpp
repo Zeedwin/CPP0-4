@@ -17,6 +17,7 @@ void PhoneBook::handle_input()
 	{
 		string	input;
 		Contacts	cont;
+		PhoneBook	phb;
 
 		if(!getline(cin, input))
 			exit(0);
@@ -25,7 +26,7 @@ void PhoneBook::handle_input()
 		if(input == "ADD") 
 			ind = cont.add_contact(ind);
 		if(input == "SEARCH")
-			cout << "u are searching" << endl;
+			cont.search_contact(ind, phb);
 		if(input == "LAIN")
 			cout << "Let's love Lain" << endl;
 		if(input == "EXIT")
