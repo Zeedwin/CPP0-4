@@ -6,6 +6,8 @@ PhoneBook::PhoneBook() : ind(0) {
 
 void PhoneBook::handle_input()
 {
+	Contacts	cnt;
+
 	cout << "\033[1;90m*********************************" << std::endl;
 	cout << "\033[1;90m*                               *" << std::endl;
 	cout << "\033[1;90m*           \033[1;35mPhoneBook          \033[1;90m *" << std::endl;
@@ -16,20 +18,29 @@ void PhoneBook::handle_input()
 	while("Let's love Lain")
 	{
 		string	input;
-		Contacts	cont;
-		PhoneBook	phb;
 
 		if(!getline(cin, input))
 			exit(0);
 		for (int j = 0; input[j]; ++j)
 			input[j] = toupper(input[j]);
 		if(input == "ADD") 
-			ind = cont.add_contact(ind);
-		if(input == "SEARCH")
-			cont.search_contact(ind, phb);
-		if(input == "LAIN")
+		{
+			cont[ind].add_contact();
+			if(ind != 7)
+				++ind;
+			else
+				ind = 0;
+		}
+		else if(input == "SEARCH")
+			search_contact(ind);
+		else if(input == "LAIN")
 			cout << "Let's love Lain" << endl;
-		if(input == "EXIT")
+		else if(input == "EXIT")
 			exit(0);
+		else
+		{
+			cout << "\033[1;31mCommand not Found\033[1;30m" << "\n";
+			cnt.print_promt();
+		}
 	}
 }

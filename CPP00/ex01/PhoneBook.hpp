@@ -6,7 +6,7 @@
 /*   By: jgirard- <jgirard-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/14 19:43:10 by jgirard-          #+#    #+#             */
-/*   Updated: 2023/06/19 14:50:22 by jgirard-         ###   ########.fr       */
+/*   Updated: 2023/06/20 21:57:27 by jgirard-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@ public:
 	PhoneBook();
 	void handle_input();
 	int ind;
+	void search_contact(int index);
 	Contacts	cont[8];
 private:
 	void search_cmd();

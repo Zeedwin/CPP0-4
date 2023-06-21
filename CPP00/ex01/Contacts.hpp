@@ -21,16 +21,23 @@ private:
 	string	nickname;
 	string	phonenumber;
 	string	darkestsecret;
-	PhoneBook	phb;
+public:
 void save_contact(string fname,
 							string lname,
 							string nname,
 							string pnum,
 							string dsecret);
-public:
 	string	store_string(string str);
-	int add_contact(int index);
-	void search_contact(int index);
+	string	store_phone(string str);
+	void add_contact();
+	int is_str_digit(string str);
+	string get_firstname();
+	void print_promt();
+	string get_lastname();
+	string get_nickname();
+	string get_phonenumber();
+	string get_darksecret();
+	bool is_empty();
 	void display_contact(int index);
 	Contacts(/* args */);
 };
