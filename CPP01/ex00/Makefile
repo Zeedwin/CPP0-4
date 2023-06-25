@@ -1,7 +1,10 @@
-NAME = megaphone
+NAME = Zombie
 CC         := c++
 FLAGS    := -Wall -Wextra -Werror -std=c++98
-SRCS        :=      megaphone.cpp \
+SRCS        :=      Zombie.cpp \
+					main.cpp \
+					randomChump.cpp \
+					newZombie.cpp
 
 OBJS        := ${SRCS:.cpp=.o}
 

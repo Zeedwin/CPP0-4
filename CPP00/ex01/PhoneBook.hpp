@@ -6,7 +6,7 @@
 /*   By: jgirard- <jgirard-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/14 19:43:10 by jgirard-          #+#    #+#             */
-/*   Updated: 2023/06/20 21:57:27 by jgirard-         ###   ########.fr       */
+/*   Updated: 2023/06/21 16:36:54 by jgirard-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,10 @@ public:
 	void handle_input();
 	int ind;
 	void search_contact(int index);
-	Contacts	cont[8];
+	Contact	cont[8];
 private:
 	void search_cmd();
-	string adrress_input(string str) const;
+	std::string adrress_input(std::string str) const;
 	
 };
 

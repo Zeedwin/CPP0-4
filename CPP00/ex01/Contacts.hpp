@@ -2,44 +2,36 @@
 #define CONTACTS_HPP
 #include <iostream>
 #include <iomanip>
-#include <cstring>
 #include <string>
 #include <cstdlib>
-using std::cin;
-using std::cout;
-using std::getline;
-using std::setw;
-using std::right;
-using std::string;
-using std::endl;
 
-class Contacts
+class Contact
 {
 private:
-	string	firstname;
-	string	lastname;
-	string	nickname;
-	string	phonenumber;
-	string	darkestsecret;
+	std::string	firstname;
+	std::string	lastname;
+	std::string	nickname;
+	std::string	phonenumber;
+	std::string	darkestsecret;
 public:
-void save_contact(string fname,
-							string lname,
-							string nname,
-							string pnum,
-							string dsecret);
-	string	store_string(string str);
-	string	store_phone(string str);
+void save_contact(std::string fname,
+							std::string lname,
+							std::string nname,
+							std::string pnum,
+							std::string dsecret);
+	std::string	store_string(std::string str);
+	std::string	store_phone(std::string str);
 	void add_contact();
-	int is_str_digit(string str);
-	string get_firstname();
+	int is_str_digit(std::string str);
+	std::string get_firstname();
 	void print_promt();
-	string get_lastname();
-	string get_nickname();
-	string get_phonenumber();
-	string get_darksecret();
+	std::string get_lastname();
+	std::string get_nickname();
+	std::string get_phonenumber();
+	std::string get_darksecret();
 	bool is_empty();
 	void display_contact(int index);
-	Contacts(/* args */);
+	Contact();
 };
 
 
