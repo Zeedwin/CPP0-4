@@ -21,7 +21,11 @@ void PhoneBook::handle_input()
 
 		std::cout << "cmd:";
 		if(!std::getline(std::cin, input))
-			exit(0);
+		{
+			std::cin.clear();
+			std::clearerr(stdin), std::cout << "\n";
+			continue;
+		}	
 		for (int j = 0; input[j]; ++j)
 			input[j] = toupper(input[j]);
 		if(input == "ADD") 
