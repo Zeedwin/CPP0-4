@@ -6,22 +6,17 @@
 class Weapon
 {
 private:
-std::string	_weapon;
+std::string	_type;
 public:
-void set_weapon(std::string weapon);
+void set_type(std::string weapon);
+std::string get_type();
 void attack();
 	Weapon(std::string weapon);
+	Weapon();
 	~Weapon();
 };
 
-Weapon::Weapon(std::string weapon): _weapon(weapon)
-{
 
-}
-
-Weapon::~Weapon()
-{
-}
 
 
 #endif
