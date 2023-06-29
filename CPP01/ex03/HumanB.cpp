@@ -17,7 +17,7 @@ HumanB::~HumanB()
 
 void HumanB::set_weapon(Weapon&	weapon)
 {
-	this->_weapon = &weapon;
+	_weapon = &weapon;
 }
 
 void HumanB::attack(void)
