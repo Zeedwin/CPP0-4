@@ -19,6 +19,4 @@ void set_weapon(Weapon& weapon);
 	~HumanB();
 };
 
-
-
 #endif
