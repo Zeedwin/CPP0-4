@@ -5,7 +5,10 @@ int main(int ac, char **av)
 	(void)ac;
 	std::string search = av[2];
 	std::string replace = av[3];
+	std::string filename = av[1];
 	std::ifstream	file(av[1]);
+	filename += ".replace";
+	std::ofstream	ofs(filename.c_str());
 	size_t pos = 0;
 	 if (file.is_open()) {
         std::string line;
@@ -13,15 +16,16 @@ int main(int ac, char **av)
 		{
             while((pos = line.find(search, pos))!= std::string::npos)
 			{
+				std::cout << line << "\n";
 				line.erase(pos, search.size());
-				std::cout << pos << "Gay\n";
 				line.insert(pos, replace);
-				std::cout << pos << "\n";
 				pos += 1;
 			}
+			ofs << line;
 			std::cout << line << "\n";
         }
         file.close();
+		ofs.close();
     } else {
         std::cout << "Failed to open the file." << std::endl;
     }
