@@ -24,6 +24,8 @@ void HumanB::attack(void)
 {
 	if(_weapon)
 		std::cout << get_name() << " attacks with their weapon " << _weapon->get_type() << "\n";
+	else 
+		std::cout << get_name() << " attacks with their fists\n";
 }
 
 std::string	HumanB::get_name(void)
