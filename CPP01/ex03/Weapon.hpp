@@ -8,8 +8,8 @@ class Weapon
 private:
 std::string	_type;
 public:
-void set_type(std::string weapon);
-std::string get_type();
+void set_Type(std::string weapon);
+std::string get_Type();
 void attack();
 	Weapon(std::string weapon);
 	Weapon();

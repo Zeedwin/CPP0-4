@@ -1,6 +1,15 @@
 #include "Zombie.hpp"
 
-void Zombie::anouncer(void)
+Zombie::Zombie(std::string name) : _name(name)
+{
+	std::cout << "Constructor Called" << "\n";
+}
+Zombie::~Zombie()	
+{
+			std::cout << "Destructor " << get_name() << " Called" << "\n";
+}
+
+void Zombie::announce(void)
 {
 	std::cout << get_name() << ": BraiiiiiiinnnzzzZ..." << "\n";
 }

@@ -23,7 +23,7 @@ void HumanB::set_weapon(Weapon&	weapon)
 void HumanB::attack(void)
 {
 	if(_weapon)
-		std::cout << get_name() << " attacks with their weapon " << _weapon->get_type() << "\n";
+		std::cout << get_name() << " attacks with their weapon " << _weapon->get_Type() << "\n";
 	else 
 		std::cout << get_name() << " attacks with their fists\n";
 }

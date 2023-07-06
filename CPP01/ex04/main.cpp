@@ -18,13 +18,11 @@ int main(int ac, char **av)
 			{
 				while((pos = line.find(search, pos))!= std::string::npos)
 				{
-					std::cout << line << "\n";
 					line.erase(pos, search.size());
 					line.insert(pos, replace);
 					pos += 1;
 				}
 				ofs << line;
-				std::cout << line << "\n";
 			}
 			file.close();
 			ofs.close();

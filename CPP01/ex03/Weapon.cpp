@@ -14,12 +14,12 @@ Weapon::~Weapon()
 {
 }
 
-std::string	Weapon::get_type(void)
+std::string	Weapon::get_Type(void)
 {
 	return _type;
 }
 
-void Weapon::set_type(std::string weapon)
+void Weapon::set_Type(std::string weapon)
 {
 	_type = weapon;
 }

@@ -7,16 +7,10 @@ class Zombie
 private:
 std::string	_name;
 public:
-	void	anouncer(void);
+	void announce( void );
 	std::string	get_name();
-	Zombie(std::string name) : _name(name)
-	{
-		std::cout << "Constructor Called" << "\n";
-	}
-	~Zombie()
-	{
-		std::cout << "Destructor Called" << "\n";
-	}
+	Zombie(std::string name);
+	~Zombie();
 };
 
 Zombie* newZombie( std::string name );
