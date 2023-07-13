@@ -23,7 +23,6 @@ public:
 
     int getRawBits(void) const;
     void setRawBits(const int value);
-
     float toFloat(void) const;
     int toInt(void) const;
 };
